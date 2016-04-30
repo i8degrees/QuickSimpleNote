@@ -620,9 +620,10 @@ def plugin_loaded():
     global package_path, temp_path, settings, notes
     package_path = path.join(sublime.packages_path(), "QuickSimplenote")
     settings = sublime.load_settings('quick_simplenote.sublime-settings')
-    # TODO(jeff): Add default value for 'temp_path' for the case when it is
-    # not found in the user's settings file.
+
     temp_path = settings.get('temp_path')
+    if not temp_path
+      temp_path = path.join(package_path, "temp")
 
     notes = load_notes()
     note_files = [note['filename'] for note in notes]
