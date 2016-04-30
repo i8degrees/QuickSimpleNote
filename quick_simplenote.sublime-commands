@@ -1,0 +1,14 @@
+[
+  {
+    "command": "create_quick_simplenote_note",
+    "caption": "QuickSimplenote: New Note"
+  },
+  {
+    "command": "show_quick_simplenote_notes",
+    "caption": "QuickSimplenote: Open list"
+  },
+  {
+    "command": "delete_quick_simplenote_note",
+    "caption": "QuickSimplenote: Delete Current Note"
+  }
+]
