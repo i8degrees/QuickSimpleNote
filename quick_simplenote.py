@@ -622,7 +622,7 @@ def plugin_loaded():
     settings = sublime.load_settings('quick_simplenote.sublime-settings')
 
     temp_path = settings.get('temp_path')
-    if not temp_path
+    if not temp_path:
       temp_path = path.join(package_path, "temp")
 
     notes = load_notes()
