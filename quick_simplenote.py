@@ -619,7 +619,10 @@ def reload_if_needed():
 def plugin_loaded():
     global package_path, temp_path, settings, notes
     package_path = path.join(sublime.packages_path(), "QuickSimplenote")
-    temp_path = path.join(package_path, "temp")
+    settings = sublime.load_settings('quick_simplenote.sublime-settings')
+    # TODO(jeff): Add default value for 'temp_path' for the case when it is
+    # not found in the user's settings file.
+    temp_path = settings.get('temp_path')
 
     notes = load_notes()
     note_files = [note['filename'] for note in notes]
@@ -629,11 +632,12 @@ def plugin_loaded():
         if f not in note_files:
             remove(path.join(temp_path, f))
 
-    settings = sublime.load_settings('quick_simplenote.sublime-settings')
     settings.clear_on_change('username')
     settings.clear_on_change('password')
+    settings.clear_on_change('temp_path')
     settings.add_on_change('username', reload_if_needed)
     settings.add_on_change('password', reload_if_needed)
+    settings.add_on_change('temp_path', reload_if_needed)
 
     reload_if_needed()
 
