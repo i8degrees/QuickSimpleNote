@@ -3,6 +3,13 @@ QuickSimplenote
 
 Sublime Text 2/3 plugin for Simplenote.
 
+End-use and Maintenance Note
+----------------------------
+
+**IMPORTANT(jeff):** This is a non-intended fork of https://github.com/sickmartian/quick_simplenote and is slated to be removed in the future! It is intended only for my own personal use in the mean time. Please do not use this repository unless you feel that you must.
+
+Once I find the maintenance window to do a proper GitHub fork of the official repository, followed by a simple pull request for the one feature addition I've made -- see my commit log for details -- this repository will disappear.
+
 Overview
 ---------
 Hit Command+Shift+S (OSX) or Windows+Shift+S (Windows) twice to start. First time it will open the settings to setup the credentials.
@@ -66,4 +73,4 @@ About your data and bugs
 ---------
 This is a free piece of software and is distributed as is, it might contain bugs that due to the nature of the application might result in data loss, please make periodic backups of any important piece of information.
 
-In case of data loss it might be helpful to use the real simplenote page or an official client with history capabilities to try and find the last sane version of your note. 
+In case of data loss it might be helpful to use the real simplenote page or an official client with history capabilities to try and find the last sane version of your note.
