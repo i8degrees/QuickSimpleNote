@@ -1,1 +1,9 @@
-{"description": "Sublime Text 2 plugin for Simplenote", "version": "0.2.5", "sublime_text": ">=3000", "dependencies": [], "url": "https://github.com/sickmartian/quick_simplenote", "platforms": ["*"]}
+{
+  "description": "Sublime Text 2+ plugin for Simplenote",
+  "version": "0.3.0",
+  "sublime_text": ">=3000",
+  "dependencies": [],
+  // "url": "https://github.com/sickmartian/quick_simplenote",
+  "url": "https://github.com/i8degrees/QuickSimpleNote.git",
+  "platforms": [ "*" ]
+}
