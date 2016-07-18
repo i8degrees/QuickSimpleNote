@@ -8,6 +8,10 @@
     "caption": "QuickSimplenote: Open list"
   },
   {
+    "command": "show_quick_simplenote_notes",
+    "caption": "Open notes"
+  },
+  {
     "command": "delete_quick_simplenote_note",
     "caption": "QuickSimplenote: Delete Current Note"
   }
